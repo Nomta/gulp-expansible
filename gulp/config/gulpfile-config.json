@@ -1,0 +1,40 @@
+{  
+  "tasks": [
+	"browser-sync",
+	"browserify",
+    "build-assets",
+	"build-css",
+	"build-html",
+	"build-imgs",
+	"build-js",
+	"concat-js",
+    "clean",
+	"config",
+	"tasks",
+	"watch"
+  ],
+  
+  "plugins": {
+    "postcss": [
+	  "postcss-normalize",
+	  "autoprefixer",
+	  "postcss-flexbugs-fixes",
+	  "css-mqpacker"
+	],
+    "postcssForProd": [
+	  "postcss-normalize",
+	  "autoprefixer",
+	  "postcss-flexbugs-fixes",
+	  "css-mqpacker",
+	  "postcss-csso"
+	]
+  },
+  
+  "browserSync": {
+    "server": {
+      "baseDir": "dist/"
+    },
+    "host": "localhost",
+    "port": 9000
+  }
+}
