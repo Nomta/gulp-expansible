@@ -24,10 +24,7 @@
     "dirName": "imgs/"
   },
   "assets": [
-    "fonts/",
-	"audio/",
-	"imgs/",
-	"svg/"
+    "fonts/"
   ],
   "maps": false
 }

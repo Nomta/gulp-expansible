@@ -2,11 +2,12 @@
   "name": "gulp-expansible",
   "version": "0.1.0",
   "description": "Gulp packer and task runner, easily expandable and customizable for different tasks and tools",
+  "keywords": ["gulp", "browserify"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nomta",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^7.2.5",
     "browser-sync": "^2.23.2",
@@ -15,7 +16,6 @@
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-bro": "^1.0.2",
-    "gulp-cache": "^1.0.2",
     "gulp-changed": "^3.2.0",
     "gulp-concat": "^2.6.1",
     "gulp-cond": "^1.0.0",
@@ -28,22 +28,18 @@
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.6.3",
     "gulp-stylus": "^2.7.0",
-    "gulp-svgmin": "^1.2.4",
     "gulp-uglify": "^3.0.0",
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^5.0.1",
     "imagemin-svgo": "^6.0.0",
     "jshint": "^2.9.5",
     "multipipe": "^2.0.1",
-    "postcss-cssnext": "^3.0.2",
     "postcss-csso": "^3.0.0",
     "postcss-flexbugs-fixes": "^3.2.0",
     "postcss-normalize": "^4.0.0",
     "poststylus": "^1.0.0"
   },
-  "dependencies": {
-    "normalize.css": "^7.0.0"
-  },
+  "dependencies": {},
   "browserslist": [
     ">2%",
     "last 5 versions",
