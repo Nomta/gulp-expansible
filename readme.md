@@ -1,4 +1,4 @@
-# gulp-expansible
+# gulp-extendable
 
 Boilerplate using Gulp, Browserify, and any other tools that you may need now or later. 
 Inspired by Dan Tello's post [Gulp + Browserify: The Everything Post](https://www.viget.com/articles/gulp-browserify-starter-faq/).
@@ -18,7 +18,7 @@ So you can use the boilerplate with various additional tools and plugins - just 
 - [Tasks](#tasks)
 - [Service tasks](#service-tasks)
 - [Service files](#service-files)
-- [License](#license)
+- [License](#license)  
 
 ## Initial set of tools
 
@@ -54,7 +54,7 @@ Development
 - live reloading
 
 Production
-- code minification
+- code minification  
 
 ### File paths
 
@@ -69,7 +69,7 @@ Put all the files in the input 'src/' directory, and you will find them in the o
 | css: | `css/main.styl` | `css/main.css` \| `css/main.min.css` |
 | html: | `index.html` | `index.html` |
 | images: | `imgs/` | `imgs/` |
-| fonts: | `fonts/` | `fonts/` |
+| fonts: | `fonts/` | `fonts/` |  
 
 
 ### Commands
@@ -86,7 +86,7 @@ clear the output directory: `gulp clean`
 display a list of registered tasks: `gulp tasks`
 display common config object: `gulp config`
 
-*[top^](#gulp-expansible)*
+*[back to top](#gulp-extendable)*  
 
 ## Advanced setup
 
@@ -130,7 +130,7 @@ The rest of the files should not be edited, since they serve to transform data f
 `gulp/index.js` requires all tasks which names are listed in `tasks` property in the `config/gulpfile-config.json`.
 `gulp/config/config.js` converts data from json files and merges them into one config object. This object is used then to transfer internal data between files.
 
-*[top^](#gulp-expansible)*
+*[back to top](#gulp-extendable)*  
 
 ## License
 This project is available under the [MIT](https://opensource.org/licenses/mit-license.php) license.  

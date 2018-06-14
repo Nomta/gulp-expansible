@@ -1,7 +1,7 @@
 {
-  "name": "gulp-expansible",
+  "name": "gulp-extendable",
   "version": "0.1.0",
-  "description": "Gulp packer and task runner, easily expandable and customizable for different tasks and tools",
+  "description": "Gulp packer and task runner, easily extendable and customizable for different tasks and tools",
   "keywords": ["gulp", "browserify"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
