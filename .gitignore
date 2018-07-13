@@ -16,6 +16,7 @@ pids
 /tmp/
 /pid/
 
+*.map
 *.[oa]
 *~
 

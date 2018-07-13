@@ -2,14 +2,29 @@
   "name": "gulp-extendable",
   "version": "0.1.0",
   "description": "Gulp packer and task runner, easily extendable and customizable for different tasks and tools",
-  "keywords": ["gulp", "browserify"],
+  "keywords": [
+    "gulp",
+    "browserify"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nomta",
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "babel-preset-env"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
   "devDependencies": {
     "autoprefixer": "^7.2.5",
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0",
     "browser-sync": "^2.23.2",
     "browserify": "^15.2.0",
     "css-mqpacker": "^6.0.1",
@@ -39,7 +54,10 @@
     "postcss-normalize": "^4.0.0",
     "poststylus": "^1.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "babel-runtime": "^6.26.0"
+  },
   "browserslist": [
     ">2%",
     "last 5 versions",

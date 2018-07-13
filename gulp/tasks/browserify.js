@@ -1,6 +1,7 @@
 'use strict';
 
-var pipe = require('multipipe');
+var pipe = require('multipipe'),
+  babelify = require('babelify');
 	
 module.exports = function(gulp, config, plugins) {
 
@@ -16,7 +17,9 @@ module.exports = function(gulp, config, plugins) {
 				plugins.sourcemaps.write(config.maps)
 			),
 			pipe(
-				plugins.bro(),
+				plugins.bro({
+          transform: babelify
+        }),
 				plugins.uglify(),
 				plugins.rename({ suffix: '.min' })
 			)

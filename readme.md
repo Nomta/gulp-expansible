@@ -1,13 +1,13 @@
 # gulp-extendable
 
-Boilerplate using Gulp, Browserify, and any other tools that you may need now or later. 
+Boilerplate using Gulp, Browserify, and any other tools you may need now or later. 
 Inspired by Dan Tello's post [Gulp + Browserify: The Everything Post](https://www.viget.com/articles/gulp-browserify-starter-faq/).
 
 The boilerplate has an initial set of standard tasks and a lot of settings that allow you to expand it.
 So you can use the boilerplate with various additional tools and plugins - just enable them as soon as you need.
 
-*Gulp version: 3.9.1*  
-*For ECMAScript 5*
+*<sub>Gulp version: 3.9.1</sub>*  
+*<sub>ECMAScript 5</sub>*
 
 ### Contents
 - [Initial set of tools](#initial-set-of-tools)
@@ -54,7 +54,8 @@ Development
 - live reloading
 
 Production
-- code minification  
+- code minification 
+- babelify 
 
 ### File paths
 
@@ -65,26 +66,26 @@ Put all the files in the input 'src/' directory, and you will find them in the o
 
 | Type | Input | Output |
 | --- | --- | --- |
-| js:  | `js/index.js` and `libs/` as directory  <br> for legasy libraries if required | `js/index.js` and `js/libs.js` \|  <br> `js/index.min.js` and `js/libs.min.js` |
-| css: | `css/main.styl` | `css/main.css` \| `css/main.min.css` |
-| html: | `index.html` | `index.html` |
-| images: | `imgs/` | `imgs/` |
-| fonts: | `fonts/` | `fonts/` |  
+| js  | `js/index.js` and `libs/` as directory  <br> for legasy libraries (optionally) | `js/index.js` and `js/libs.js` \|  <br> `js/index.min.js` and `js/libs.min.js` |
+| css | `css/main.styl` | `css/main.css` \| `css/main.min.css` |
+| html | `index.html` | `index.html` |
+| images | `imgs/` | `imgs/` |
+| fonts | `fonts/` | `fonts/` |  
 
 
 ### Commands
 
 #### Basic commands
 
-run in development environment (default task): `gulp dev` or `gulp`
-simple building without watching and live reloading: `gulp build`
-run in production environment: `gulp prod`
-clear the output directory: `gulp clean`
+run in development environment (default task): `gulp dev` or `gulp`  
+simple building without watching and live reloading: `gulp build`  
+run in production environment: `gulp prod`  
+clear the output directory: `gulp clean`  
 
 #### [Service commands](#service-tasks)
 
-display a list of registered tasks: `gulp tasks`
-display common config object: `gulp config`
+display a list of registered tasks: `gulp tasks`  
+display common config object: `gulp config`  
 
 *[back to top](#gulp-extendable)*  
 
