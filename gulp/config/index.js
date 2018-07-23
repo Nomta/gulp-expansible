@@ -9,7 +9,7 @@ var config 			= require('./gulpfile-config'),
 	pathsSrc 		= require('./paths-config'),
 	paths 			= pathsSrc.root;
 	
-	paths.assets 	= pathsSrc.assets,
+	paths.assets 		= pathsSrc.assets,
 	paths.maps 		= pathsSrc.maps;
 
 
@@ -21,11 +21,11 @@ dirs.forEach(function(dir) {
 
 function configurate(dir) {
 	var srcDir		= pathsSrc[dir],
-		output		= srcDir.outputFileName || '',
-		index		= srcDir.indexFileName 	|| '',
-		vends		= srcDir.vendorsDirName || '',
-		ext			= srcDir.ext 			|| '',
-		dir			= srcDir.dirName 		|| '';
+		output		= srcDir.outputFileName 	|| '',
+		index		= srcDir.indexFileName 		|| '',
+		vends		= srcDir.vendorsDirName 	|| '',
+		ext		= srcDir.ext 			|| '',
+		dir		= srcDir.dirName 		|| '';
 
 	var dirConfig	= {
 			src:	 paths.inputDir  + dir + '**/*' + ext,
