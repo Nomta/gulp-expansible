@@ -1,8 +1,8 @@
 'use strict';
 
-var gulp 		= require('./gulp')(),
-	config		= require('./gulp/config'),
-	browserSync = require('browser-sync');
+var gulp 	= require('./gulp')(),
+    config	= require('./gulp/config'),
+    browserSync = require('browser-sync');
 
 process.env.NODE_ENV = 'development';
 
@@ -22,10 +22,10 @@ gulp.task('build', ['build-js', 'build-imgs', 'build-assets', 'build-css', 'buil
 gulp.task('watch', function() {
 	gulp.watch(config.js.src, 	['build-js']);
 	gulp.watch(config.css.src, 	['build-css']);
-	gulp.watch(config.imgs.src, ['build-imgs']);
+	gulp.watch(config.imgs.src, 	['build-imgs']);
 	gulp.watch(config.assets, 	['build-assets']);
-	gulp.watch(config.html.src, ['build-html']);
+	gulp.watch(config.html.src, 	['build-html']);
 	
-	gulp.watch(config.outputDir + '**/*').on('change', 	browserSync.reload);
+	gulp.watch(config.outputDir + '**/*').on('change', browserSync.reload);
 });
 
