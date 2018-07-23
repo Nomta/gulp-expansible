@@ -134,4 +134,4 @@ The rest of the files should not be edited, since they serve to transform data f
 *[back to top](#gulp-extendable)*  
 
 ## License
-This project is available under the [MIT](https://opensource.org/licenses/mit-license.php) license.  
+This project is available under the [MIT](./license) license.  

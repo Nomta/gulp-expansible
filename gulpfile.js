@@ -20,11 +20,12 @@ gulp.task('prod', function() {
 gulp.task('build', ['build-js', 'build-imgs', 'build-assets', 'build-css', 'build-html']); 
 
 gulp.task('watch', function() {
-	gulp.watch(config.js.src, 	['build-js']);
-	gulp.watch(config.css.src, 	['build-css']);
-	gulp.watch(config.imgs.src, ['build-imgs']);
-	gulp.watch(config.assets, 	['build-assets']);
-	gulp.watch(config.html.src, ['build-html']);
+	gulp.watch(config.js.src, 	  ['browserify']);
+	gulp.watch(config.js.vends.src, ['concat-js']);
+	gulp.watch(config.css.src, 	  ['build-css']);
+	gulp.watch(config.imgs.src,   ['build-imgs']);
+	gulp.watch(config.assets, 	  ['build-assets']);
+	gulp.watch(config.html.src,   ['build-html']);
 	
 	gulp.watch(config.outputDir + '**/*').on('change', 	browserSync.reload);
 });

@@ -1,24 +1,24 @@
 {
   "root": {
     "rootDir": "/",
-	"inputDir": "src/",
-	"outputDir": "dist/"
+	  "inputDir": "src/",
+	  "outputDir": "dist/"
   },
   "js": {
     "indexFileName": "index.js",
-	"outputFileName": "index.js",
-	"dirName": "js/",
-	"vendorsDirName": "libs/",
-	"ext": ".js"
+	  "outputFileName": "index.js",
+	  "dirName": "js/",
+	  "vendorsDirName": "libs/",
+	  "ext": ".js"
   },
   "css": {
     "indexFileName": "main.styl",
-	"dirName": "css/",
-	"ext": ".styl"
+	  "dirName": "css/",
+	  "ext": ".styl"
   },
   "html": {
     "indexFileName": "index.html",
-	"ext": ".html"
+	  "ext": ".html"
   },
   "imgs": {
     "dirName": "imgs/"
